@@ -1,0 +1,92 @@
+body
+{
+	background-color: #222222;
+	
+	font-family: Tahoma, Arial;
+	font-size: 10pt;
+}
+
+h1
+{
+	font-family: Roboto, Tahoma, Arial;
+	font-size: 16pt;
+	font-weight: normal;
+	text-transform: uppercase;
+	
+	text-align: center;
+}
+
+a
+{
+	text-decoration: none;
+	color: Blue;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+.error
+{
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	
+	color: Red;
+}
+
+
+/**************************************************\
+					MAIN LAYOUT
+\**************************************************/
+
+.header, .body, .footer
+{
+	width: 690px;
+	padding: 10px 10px 10px 10px;
+}
+
+.header
+{
+	height: 169px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-color: #FFA500;
+}
+
+.body
+{
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-color: White;
+}
+
+.footer
+{
+	height: 69px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-color: White;
+	
+	border-top: #FFA500 dotted 1px;
+}
+
+
+/**************************************************\
+			USER :: LOGIN, REGISTER
+\**************************************************/
+
+.user-login, .user-register
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.user-login td[colspan="2"],
+.user-register td[colspan="2"]
+{ text-align: center; }
+

@@ -1,0 +1,48 @@
+{% extends "../main.html" %}
+
+{% block title %}{{ _("user.register") }}{% end %}
+
+{% block content %}
+	<h1>{{ _("user.register") }}</h1>
+	<form action="{{ request.path }}" method="post">
+		<table class="user-register">
+			<tr>
+				<td><label for="email">{{ _("user.email") }}:</label></td>
+				<td><input type="email" name="email" value="{{ email }}"/></td>
+			</tr>
+			<tr>
+				<td><label for="password">{{ _("user.password") }}:</label></td>
+				<td><input type="password" name="password" value=""/></td>
+			</tr>
+			<tr>
+				<td><label for="password_confirm">{{ _("user.password_confirm") }}:</label></td>
+				<td><input type="password" name="password_confirm" value=""/></td>
+			</tr>
+			<tr>
+				<td><label for="display_name">{{ _("user.display_name") }}:</label></td>
+				<td><input type="text" name="display_name" value="{{ display_name }}"/></td>
+			</tr>
+			<tr>
+				<td><label for="gender">{{ _("user.gender") }}:</label></td>
+				<td>
+					<select name="gender">
+						{% for g_id in gender_list %}
+						<option value="{{ g_id }}"{% if g_id == gender %} selected{% end %}>{{ _("user.gender." + gender_list[g_id]) }}</option>
+						{% end %}
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" name="register" value="{{ _("user.register") }}"/><br />
+				</td>
+			</tr>
+		</table>
+		<div class="error">
+			{% for err in errors %}
+			{{ _(err) }}<br />
+			{% end %}
+		</div>
+		{% module xsrf_form_html() %}
+	</form>
+{% end %}

@@ -1,0 +1,9 @@
+<div class="user-toolbar">
+	{% if user is None %}
+	<a href="{{ handler.url("login.html") }}">{{ _("user.login") }}</a> |
+	<a href="{{ handler.url("register.html") }}">{{ _("user.register") }}</a>
+	{% else %}
+	<a href="{{ handler.url("dashboard.html") }}">{{ _("user.dashboard") }}</a> |
+	<a href="{{ handler.url("logout.html") }}">{{ _("user.logout") }}</a>
+	{% end %}
+</div>

@@ -1,0 +1,26 @@
+"home_page","Học thi lập trình trực tuyến"
+
+"user","Thành viên"
+
+"user.email","Thư điện tử"
+"user.password","Mật khẩu"
+"user.password_confirm","Xác nhận mật khẩu"
+"user.display_name","Họ và tên"
+"user.gender","Giới tính"
+"user.gender.female","Nữ",
+"user.gender.male","Nam",
+
+"user.login","Đăng nhập"
+"user.lost_password","Quên mật khẩu"
+"user.logout","Thoát"
+"user.register","Đăng ký"
+"user.dashboard","Bảng điều khiển"
+
+"user.wrong_email_or_password","Địa chỉ thư điện tử hoặc mật khẩu sai. Hãy kiểm tra và đăng nhập lại."
+"user.email_not_valid","Địa chỉ thư điện tử không hợp lệ."
+"user.email_duplicated","Thư điện tử này đã được sử dụng ở một tài khoản khác."
+"user.password_not_valid","Mật khẩu phải có độ dài 5-20 ký tự, bao gồm chữ cái, chữ số và một số ký tự đặc biệt."
+"user.password_confirm_different","Mật khẩu xác nhận không chính xác."
+"user.display_name_not_valid","Họ và tên không hợp lệ."
+
+"error.unknown", "Đã có lỗi xảy ra trong quá trình thực hiện. Xin vui lòng thử lại hoặc báo cho quản trị hệ thống."

@@ -1,0 +1,27 @@
+{% extends "../main.html" %}
+
+{% block title %}{{ _("user.login") }}{% end %}
+
+{% block content %}
+	<h1>{{ _("user.login") }}</h1>
+	<form action="{{ request.path }}" method="post">
+		<table class="user-login">
+			<tr>
+				<td><label for="email">{{ _("user.email") }}:</label></td>
+				<td><input type="text" name="email" value="{{ email }}"/></td>
+			</tr>
+			<tr>
+				<td><label for="password">{{ _("user.password") }}:</label></td>
+				<td><input type="password" name="password" value=""/></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" name="login" value="{{ _("user.login") }}"/><br />
+					<a href="{{ handler.url("lostpassword.html") }}">{{ _("user.lost_password") }}</a>
+				</td>
+			</tr>
+		</table>
+		<div class="error">{{ error }}</div>
+		{% module xsrf_form_html() %}
+	</form>
+{% end %}
